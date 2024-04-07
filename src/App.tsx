@@ -3,7 +3,7 @@ function App() {
   
   return (
     <>
-      Hola Mundo
+      <header className=""></header>
     </>
   )
 }
