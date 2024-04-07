@@ -1,3 +1,4 @@
+import MenuItem from "./components/MenuItem";
 import { menuItems } from "./data/db";
 
 function App() {
@@ -10,15 +11,18 @@ function App() {
       </header>
 
       <main className="max-w-7xl mx-auto py-20 grid md:grid-cols-2">
-
         <div>
           <h2>Menu</h2>
         </div>
+        {menuItems.map((item) => (
+          <MenuItem
+            key={item.id}
+          />
+        ))}
 
         <div>
           <h2>Consumo</h2>
         </div>
-
       </main>
     </>
   );
