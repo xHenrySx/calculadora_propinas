@@ -1,6 +1,6 @@
 import MenuItem from "./components/MenuItem";
 import { menuItems } from "./data/db";
-import useOrder from "./useOrder";
+import useOrder from "./hooks/useOrder";
 
 function App() {
   const { addItem } = useOrder();
